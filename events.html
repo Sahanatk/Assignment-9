@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events Example</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+   $(function (){
+       //Question 16
+//      $('#myBtn').click(function (event) {
+//          window.alert("The button has been clicked");
+//    });
+       //Question 17
+//      $('#myBtn').bind("click",function(event) {
+//          window.alert("The button has been clicked") ;
+//       });
+       //Question 18
+//       $('#myBtn').on("click",function(event) {
+//            window.alert("The button has been clicked") ;
+//      });
+       //Question 19
+//       $('body').on ({
+//          click : function(event) {
+//              window.alert("The button has been clicked");
+//          }
+//       },'button');
+       //Question 20
+//    $("div").css('width','400px')
+//            .css('height','400px')
+//            .css('background-color','#dfe3e6');
+//    $('div').on('click mouseenter mouseleave',function(event) {
+//            window.alert("Mouse clicked the div or mouse entered the div or mouse left the div") ;
+//    });
+       //Question 21
+//    $('div').css('width','400px')
+//            .css('height','400px')
+//            .css('background-color','#dfe3e6');
+//    $('div').on({
+//       mouseenter:function(){
+//         $('span').text("mouse entered the div element");
+//       },
+//       mouseleave:function(){
+//           $('span').text("mouse left the div element");
+//       },
+//       click:function(){
+//           $('span').text("mouse clicked the div element");           
+//       }
+//
+//   });
+        //Question 22
+//        $('p a').click(function(event){
+//            var ele = $(this);
+//            if (ele.attr("href").match("modulemedia")){
+//                event.preventDefault();
+//                ele.addClass("modulemedia");
+//            }
+//        });
+//        $('p a').css('color','#ccc1c0d');
+//        $('p a').click(function(event){
+//            window.alert(event.target.nodeName + " triggered the event");
+//        });
+       //Question 23
+//       $(window).resize(function(){
+//           $('div').text($(window).width());
+//           $('div').text($(window).height());
+//       });
+       //Question 24
+//        $('#myText').focusin(function(){
+//           $('#myText').css('background-color','#dfe3e6');
+//       });
+//       $('#myText').focusout(function(){
+//           $('#myText').removeAttr('style');   
+//       });
+       //Question 25
+//       $('#name').focusin(function(){
+//           $('#name').removeAttr('style');
+//       });
+//       $('#email').focusin(function(){
+//           $('#email').removeAttr('style');
+//       });      
+//       $('#myForm').submit(function(event){
+//            var nameTextfield = $('#name');
+//            var emailTextfield = $('#email');
+//            var name = $('#name').val();
+//            var email = $('#email').val();
+//            var showAlert = false;
+//            if(name == '') {
+//                $('#name').css('border','solid #cc1c0d 2px');
+//                showAlert = true;
+//            } else {
+//                $('#name').css('border','solid #3DE448 2px');
+//            }
+//            if(email == '') {
+//                $('#email').css('border','solid #cc1c0d 2px');
+//                showAlert = true;
+//            } else {
+//                $('#email').css('border','solid #3DE448 2px');
+//            }
+//            if (showAlert == true) {
+//                window.alert('Given fields are required');
+//            }    
+//            event.preventDefault();
+//       }); 
+});
+</script>
+</head>
+<body>
+<button id="myBtn">Click Me!!</button><br>
+
+<!--Question 19-->
+<button id="myBtn1">Click Me Too!</button><br>
+
+
+<!--//Question 21-->
+<div><span></span></div><br>
+
+<!--Question 22-->
+<p><a href="modulemedia.com">Module Media</a></p>
+
+<!--//Question 24-->
+<input type="text" id="myText"><br><br>
+
+<!--  //Question 25-->
+<form id="myForm">
+<label>Enter your name:</label>
+<input type="text" id="name"><br><br>
+<label>Enter your e-mail address:</label>
+<input type="text" id="email"><br><br>
+<input type="submit" value="submit" id="submit">
+</form>
+
+</body>
+</html>
