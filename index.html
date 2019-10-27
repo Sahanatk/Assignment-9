@@ -10,41 +10,21 @@
      <script>
     $(document).ready(function(){
         //The Headings
-        $('h2').css('border','solid black 1px');
-        $('h2').css('color','#cc1c0d');
-        $('h2').css('padding','3px 0px 3px 20px');
-        $('h2').css('border-radius','0px 5px');
-        $('h2').css('background-color','#dfe3e6');
+        $(':header').css('border','solid black 1px')
+                    .css('color','#cc1c0d')
+                    .css('padding','3px 0px 3px 20px')
+                    .css('border-radius','0px 5px')
+                    .css('background-color','#dfe3e6');
+  
         //The Navigation Menu
-        $('.navigation').css('border','solid #929ca4 1px')
-                        .css('padding','3px 0px 3px 20px')
-                        .css('width','155px')
-                        .css('background-color','#dfe3e6');
-        $('.navigation a').css("color","#cc1c0d");
-        $('.navigation2').css('border','solid #929ca4 1px')
-                        .css('padding','3px 0px 3px 20px')
-                        .css('width','155px')
-                        .css('background-color','#dfe3e6');
-        $('.navigation2 a').css("color","#cc1c0d");
-        $('.navigation3').css('border','solid #929ca4 1px')
-                        .css('padding','3px 0px 3px 20px')
-                        .css('width','155px')
-                        .css('background-color','#dfe3e6');
-        $('.navigation3 a').css("color","#cc1c0d");
-        $('.navigation4').css('border','solid #929ca4 1px')
-                        .css('padding','3px 0px 3px 20px')
-                        .css('width','155px')
-                        .css('background-color','#dfe3e6');
-        $('.navigation4 a').css("color","#cc1c0d");
-        $('.navigation5').css('border','solid #929ca4 1px')
-                        .css('padding','3px 0px 3px 20px')
-                        .css('width','155px')
-                        .css('background-color','#dfe3e6');
-        $('.navigation5 a').css("color","#cc1c0d");
+        $('ul li.navigation').css('border','solid #929ca4 1px')
+                            .css('padding','3px 0px 3px 20px')
+                            .css('width','155px')
+                            .css('background-color','#dfe3e6');
+                           
+         $('ul li.navigation a').css("color","#cc1c0d");
       
     });
-    
-    
     </script>
 </head>
 
@@ -54,10 +34,10 @@
 		<nav>
 			<ul>
 				<li class="navigation"><a href="#">Home</a></li>
-				<li class="navigation2"><a href="#">About Us</a></li>
-				<li class="navigation3"><a href="#">Solutions</a></li>
-				<li class="navigation4"><a href="#">Support</a></li>
-				<li class="navigation5"><a href="#">Contact Us</a></li>
+				<li class="navigation"><a href="#">About Us</a></li>
+				<li class="navigation"><a href="#">Solutions</a></li>
+				<li class="navigation"><a href="#">Support</a></li>
+				<li class="navigation"><a href="#">Contact Us</a></li>
 			</ul>
 		</nav>
         <!--Main Content-->
